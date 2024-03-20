@@ -374,9 +374,9 @@ int main(){
 
 
     //source binary file filepath * CHANGE THE FILEPATH TO YOURS *
-    std::string input_filepath  = "conv_input_tensor.bin";
-    std::string filter_filepath = "conv_filter_tensor.bin";
-    std::string bias_filepath   = "conv_bias_value.bin";
+    std::string input_filepath  = "../pytorch-code/conv_input_tensor.bin";
+    std::string filter_filepath = "../pytorch-code/conv_filter_tensor.bin";
+    std::string bias_filepath   = "../pytorch-code/conv_bias_value.bin";
 
     size_t input_num_elements;
     size_t padded_input_num_elements;
@@ -547,7 +547,7 @@ int main(){
 
     //output file and reference file path
     std::string chk_filepath  = "conv_output_check.bin";
-    std::string ref_filepath = "conv_output_reference.bin";
+    std::string ref_filepath = "../pytorch-code/conv_output_reference.bin";
 
     writeBinary(chk_filepath, CNV_layer_output, output_num_elements);
 
