@@ -373,7 +373,7 @@ int main(){
     output_shape.width    = (input_shape.width + 2*args.pad_width - filter_shape.width)/args.stride_width + 1;
 
 
-    //source binary file filepath
+    //source binary file filepath * CHANGE THE FILEPATH TO YOURS *
     std::string input_filepath  = "conv_input_tensor.bin";
     std::string filter_filepath = "conv_filter_tensor.bin";
     std::string bias_filepath   = "conv_bias_value.bin";
